@@ -1,3 +1,3 @@
 ## Description
 
-> This repository includes web components from my previous company.
+> This repository is my playground in tinkering new frontend technologies.
