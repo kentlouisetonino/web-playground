@@ -10,7 +10,7 @@
 > - Any tree must have a root node and this is the `document`.
 > - `document` is part of the browser. Any `HTML` tag you write is going to be a direct or indirect child of the root node document.
 
-![Conceptual Tree Structure](./images/image1.png)
+![Conceptual Tree Structure](../images/conceptual-dom.png)
 
 <br />
 
