@@ -1,7 +1,7 @@
 import FFocusingInput from './FocusingInput';
 
 export default {
-  title: 'Focusing Input',
+  title: 'ReactDOM/Focusing Input',
 };
 
 export function FocusingInput() {
