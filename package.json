@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@babel/core": "^7.21.4",
-    "@floating-ui/react": "^0.22.3",
+    "@floating-ui/dom": "^1.2.6",
+    "@floating-ui/react": "^0.23.0",
     "@react-three/drei": "^9.64.0",
     "@react-three/fiber": "^8.12.0",
     "@storybook/addon-actions": "^7.0.2",
