@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useRef } from 'react';
-import nodejsImage from '../../images/nodejs.png';
-import typescriptImage from '../../images/typescript.png';
+import nodejsImage from '../../Images/nodejs.png';
+import typescriptImage from '../../Images/typescript.png';
 
 export default function ScrollingToImage() {
   const reactjsImageRef = useRef<HTMLLIElement>(null);
