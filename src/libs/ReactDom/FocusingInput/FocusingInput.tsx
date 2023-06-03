@@ -20,8 +20,8 @@ export default function FocusingInput() {
 
   return (
     <div className="space-x-3">
-      <input ref={inputRef} className="border border-black p-2 rounded" />
-      <button onClick={handleClick} className="bg-black text-white p-2 rounded">
+      <input ref={inputRef} className="rounded border border-black p-2" />
+      <button onClick={handleClick} className="rounded bg-black p-2 text-white">
         Focus Input
       </button>
     </div>
