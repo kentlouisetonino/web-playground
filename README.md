@@ -1,3 +1,2 @@
 ## Description
-
-> This repository is my playground in practicing and tinkering new frontend technologies.
+> - A playground where I can do practice and tinkering new frontend technologies.
