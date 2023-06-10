@@ -4,6 +4,8 @@
 > - Any HTML that we code is added as a node, to this tree.
 
 <br />
+<br />
+<br />
 
 ## document
 
@@ -12,6 +14,8 @@
 
 ![Conceptual Tree Structure](../Images/conceptual-dom.png)
 
+<br />
+<br />
 <br />
 
 ## Accessing DOM in ReactJS
