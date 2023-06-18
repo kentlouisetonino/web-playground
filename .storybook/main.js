@@ -1,17 +1,33 @@
-const path = require('path');
+import * as path from 'path';
 
-module.exports = {
+export default {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
-  addons: ['@storybook/addon-essentials', 'storybook-addon-designs'],
   framework: {
     name: '@storybook/nextjs',
     options: {
-      options: {
-        nextConfigPath: path.resolve(__dirname, '../next.config.js'),
+      image: {
+        loading: 'eager',
       },
+      nextConfigPath: path.resolve(__dirname, '../next.config.js'),
     },
   },
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-controls',
+  ],
+  webpackFinal: async (config) => {
+    config.module.rules.push({
+      test: /\.scss$/,
+      use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+    });
+
+    return config;
+  },
+  // docs: {
+  //   autodocs: true,
+  // },
   features: {
-    storyStoreV7: true,
+    storyStoreV7: false,
   },
 };
