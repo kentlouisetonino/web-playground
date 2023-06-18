@@ -9,7 +9,7 @@ import { useRef } from 'react';
  * The ref={inputRef} will tell React to put
  * the input element DOM node into inputRef.current.
  */
-export default function FocusingInput() {
+export default function UseReference() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   function handleClick() {

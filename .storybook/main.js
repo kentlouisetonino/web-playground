@@ -24,9 +24,6 @@ export default {
 
     return config;
   },
-  // docs: {
-  //   autodocs: true,
-  // },
   features: {
     storyStoreV7: false,
   },
