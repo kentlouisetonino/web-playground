@@ -1,4 +1,4 @@
-import { ForwardedRef, forwardRef } from 'react';
+import { forwardRef } from 'react';
 
 interface VideoProps {
   src: string;
@@ -6,15 +6,16 @@ interface VideoProps {
   width: number;
 }
 
-const VideoPlayer = forwardRef(function VideoPlayer(
-  { src, type, width }: VideoProps,
-  ref: ForwardedRef<HTMLVideoElement>
-) {
-  return (
-    <video width={width} ref={ref}>
-      <source src={src} type={type} />
-    </video>
-  );
-});
+const VideoPlayer = forwardRef<HTMLVideoElement, VideoProps>(
+  ({ src, type, width }, forwardedRef) => {
+    return (
+      <video width={width} ref={forwardedRef}>
+        <source src={src} type={type} />
+      </video>
+    );
+  }
+);
+
+VideoPlayer.displayName = 'VideoPlayer';
 
 export default VideoPlayer;
