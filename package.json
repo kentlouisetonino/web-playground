@@ -15,6 +15,7 @@
     "@babel/core": "^7.22.9",
     "@floating-ui/dom": "^1.4.5",
     "@floating-ui/react": "^0.24.8",
+    "@monaco-editor/react": "^4.5.1",
     "@react-three/drei": "^9.79.3",
     "@react-three/fiber": "^8.13.5",
     "@storybook/addon-actions": "^7.1.0",
